@@ -23,6 +23,7 @@ function Weather() {
         setData(response.data);
       }, setLocation(""))
       .catch((err) => {
+        // eslint-disable-next-line eqeqeq
         if (err.response.status == "404") {
           alert(err.response.data.message);
           console.log(err);

@@ -12,7 +12,7 @@ function Weather() {
   const apiKey = "4a4fe1a82a77cc10f93fc16ba59fa5f9";
   const baseUrl = `https://api.openweathermap.org/data/2.5/weather?q=${location}&limit=5&&units=metric&appid=${apiKey}`;
 
-  // funtion to handle event using axios
+  // function to handle event using axios
   const searchLocation = (event) => {
     setLoading(true);
     setError(false);
@@ -88,7 +88,7 @@ function Weather() {
                   : null}{" "}
               </p>
             </div>
-          </div>
+            </div>
         )}
 
         {error === true && (
